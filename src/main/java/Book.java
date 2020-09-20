@@ -1,5 +1,3 @@
-package study;
-
 public class Book {
     public String bookName;
     public String author;
