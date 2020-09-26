@@ -19,6 +19,9 @@ public class QuickSort {
 
 
     public static int getGoal(int begin,int end,int [] array){
+        //其实就是先取出基准的数，第一次是array[0],这里是待填项，假设设array[9]小于array[0]
+        //array[9]的值是填到array[0]，当array[2]大于array[0]，array[2]填到array[9]
+        //直到begin等于end，array[0]的值填到array[begin]
         int tempNum = array[begin];
         while (begin<end){
             while (begin<end && array[end]>tempNum){
